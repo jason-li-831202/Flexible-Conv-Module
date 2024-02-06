@@ -160,6 +160,7 @@ The `Flexible-Conv-Module` library is a flexible toolbox of a series of CV algor
             <li>PVTv2 Block</li>
             <li>TnT Block</li>
             <li>WaveMLP Block</li>
+            <li>STViT Block</li>
         </ul>
       </td>
     </tr>
@@ -359,6 +360,10 @@ The `Flexible-Conv-Module` library is a flexible toolbox of a series of CV algor
 - 8 - [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)
   - CVPR 2022
   - Usage : `ConvNeXtUnit`, `ConvNeXtStage`
+
+- 9 - [Vision Transformer with Super Token Sampling](https://arxiv.org/abs/2211.11167)
+  - CVPR 2023
+  - Usage : `STViTUnit`, `STViTStage`
 
 </details>
 
