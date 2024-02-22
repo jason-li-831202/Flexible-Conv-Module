@@ -112,6 +112,7 @@ The `Flexible-Conv-Module` library is a flexible toolbox of a series of CV algor
             <li>VoV Block</li>
             <li>Pelee Block</li>
             <li>EPSA Block</li>
+            <li>CGNet Block</li>
         </ul>
       </td>
     </tr>
@@ -294,6 +295,10 @@ The `Flexible-Conv-Module` library is a flexible toolbox of a series of CV algor
 - 6 - [EPSANet: An Efficient Pyramid Squeeze Attention Block on Convolutional Neural Network](https://arxiv.org/abs/2105.14447)
   - CVPR 2021
   - Usage : `EPSAUnit`, `EPSAStage`
+
+- 7 - [CGNet: A Light-weight Context Guided Network for Semantic Segmentation](https://arxiv.org/pdf/1811.08201)
+  - CVPR 2019
+  - Usage : `ContextGuidedUnit`, `ContextGuidedStage`
 
 </details>
 

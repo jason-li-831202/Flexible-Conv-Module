@@ -1,3 +1,4 @@
+thop
 einops
 torchsummary
 onnx==1.12.0
