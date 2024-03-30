@@ -110,6 +110,7 @@ The `Flexible-Conv-Module` library is a flexible toolbox of a series of CV algor
             <li>Resnext Block</li>
             <li>VarGroup Block</li>
             <li>VoV Block</li>
+            <li>HGnet Block</li>
             <li>Pelee Block</li>
             <li>Mobilenext Block</li>
             <li>EPSA Block</li>
@@ -289,19 +290,23 @@ The `Flexible-Conv-Module` library is a flexible toolbox of a series of CV algor
   - CVPR 2019 
   - Usage : `OSAUnit`, `DWsOSAUnit`, `OSAStage`
 
-- 5 - [Pelee: A Real-Time Object Detection System on Mobile Devices](https://arxiv.org/abs/1804.06882)
+- 5 - [High Performance GPU Net]( https://github.com/PaddlePaddle/PaddleClas/blob/release/2.5/docs/zh_CN/models/ImageNet1k/PP-HGNet.md )
+  - Paddlepaddle
+  - Usage : `"HGUnit`, `HGStage`
+
+- 6 - [Pelee: A Real-Time Object Detection System on Mobile Devices](https://arxiv.org/abs/1804.06882)
   - CVPR 2019
   - Usage : `PeleeUnit`, `PeleeStage`
 
-- 6 - [Rethinking Bottleneck Structure for Efficient Mobile Network Design](https://arxiv.org/abs/2007.02269)
+- 7 - [Rethinking Bottleneck Structure for Efficient Mobile Network Design](https://arxiv.org/abs/2007.02269)
   - ECCV 2020
   - Usage : `MobilenextStage`
 
-- 7 - [EPSANet: An Efficient Pyramid Squeeze Attention Block on Convolutional Neural Network](https://arxiv.org/abs/2105.14447)
+- 8 - [EPSANet: An Efficient Pyramid Squeeze Attention Block on Convolutional Neural Network](https://arxiv.org/abs/2105.14447)
   - CVPR 2021
   - Usage : `EPSAUnit`, `EPSAStage`
 
-- 8 - [CGNet: A Light-weight Context Guided Network for Semantic Segmentation](https://arxiv.org/pdf/1811.08201)
+- 9 - [CGNet: A Light-weight Context Guided Network for Semantic Segmentation](https://arxiv.org/pdf/1811.08201)
   - CVPR 2019
   - Usage : `ContextGuidedUnit`, `ContextGuidedStage`
 

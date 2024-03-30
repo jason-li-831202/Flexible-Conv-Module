@@ -1,3 +1,4 @@
+import math
 import torch
 import numpy as np
 from torch import nn
@@ -43,13 +44,13 @@ class MixedDepthwiseConv2d(nn.Module):
                 padding = (dilation*(kernel[0]-1)//2, dilation*(kernel[1]-1)//2)
 
                 level = nn.Conv2d(in_channels, int(split_chaneel), kernel_size=kernel,
-                                    stride=stride, padding=padding, groups=1,
+                                    stride=stride, padding=padding, groups=math.gcd(in_channels, int(split_chaneel)),
                                     dilation=dilation, bias=bias, padding_mode=padding_mode)
                 levels.append(level)
                 self.__setattr__('mixConv{}x{}'.format(*kernel), level)
         self.mixConv = nn.ModuleList(levels)
         self.bn = nn.BatchNorm2d(out_channels)
-        self.act = nn.LeakyReLU(0.1, inplace=True)
+        self.act = nn.SiLU()
 
         self.identity = nn.Identity() if (out_channels == in_channels and stride == (1, 1)) else None
         print('MixConv, identity = ', self.identity)
